@@ -1,0 +1,50 @@
+@mainHeight: 40px;
+.input_main {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  .input_item {
+    width: 32px;
+    height: @mainHeight;
+    line-height: @mainHeight;
+    border: 1px solid #d9d9d9;
+    &:not(:first-child) {
+      margin-left: 4px;
+    }
+
+    font-family: MarkPro-Medium;
+    font-size: 20px;
+    color: #323232;
+    text-align: center;
+
+    span {
+      display: inline-block;
+      width: 2px;
+      height: 16px;
+      background: #1890ff;
+      border-radius: 1px;
+      animation: light 0.5s 0.2s linear infinite alternate;
+    }
+
+    @keyframes light {
+      0% {
+        background: #1890ff;
+      }
+      100% {
+        background: transparent;
+      }
+    }
+  }
+
+  input {
+    width: 100%;
+    height: @mainHeight;
+    position: absolute;
+    left: 0;
+    outline: none;
+    color: transparent;
+    text-shadow: 0 0 0 transparent;
+    background-color: transparent;
+    border: transparent;
+  }
+}

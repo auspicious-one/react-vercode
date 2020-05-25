@@ -1,0 +1,14 @@
+{
+  "name": "@auspicious/react-vercode",
+  "version": "1.0.3",
+  "description": "一款可高度复用的 react 验证码输入组件",
+  "private": false,
+  "main": "index.js",
+  "scripts": {},
+  "author": "auspicious",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lovefive5/react-vercode.git"
+  }
+}
